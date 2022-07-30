@@ -1,0 +1,22 @@
+select count(*) from  bank_details
+
+select sum(balance) as Sum_of_Balance from bank_details
+
+select min(balance) from bank_details
+
+select max(balance) from bank_details
+
+select * from bank_details
+where loan like "yes";
+
+select avg(balance) from bank_details where job like "admin.";
+
+select * from bank_details 
+where `default` like 'yes' and age <45;
+
+select * from bank_details 
+where `default` like 'yes' and education like "primary";
+
+select * from bank_details where balance <0;
+
+select * from bank_details where housing like "no";
